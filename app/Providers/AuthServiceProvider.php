@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace EngineBasicTheme\Providers;
 
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Gate;
