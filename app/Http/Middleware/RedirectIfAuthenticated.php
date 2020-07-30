@@ -2,7 +2,7 @@
 
 namespace EngineBasicTheme\Http\Middleware;
 
-use App\Providers\RouteServiceProvider;
+use EngineBasicTheme\Providers\RouteServiceProvider;
 use Closure;
 use Illuminate\Support\Facades\Auth;
 
