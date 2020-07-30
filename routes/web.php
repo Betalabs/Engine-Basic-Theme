@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('base');
 });
+
+Route::get('/components/menu/1', function () {
+    return view('mockings.menu.1');
+});
