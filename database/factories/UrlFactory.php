@@ -2,9 +2,8 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use EngineBasicTheme\Models\Category;
+use EngineBasicTheme\Models\Url;
 use Faker\Generator as Faker;
-use Illuminate\Support\Str;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,8 +16,8 @@ use Illuminate\Support\Str;
 |
 */
 
-$factory->define(Category::class, function (Faker $faker) {
+$factory->define(Url::class, function (Faker $faker) {
     return [
-        'name' => $faker->domainWord
+        'url' => $faker->slug
     ];
 });

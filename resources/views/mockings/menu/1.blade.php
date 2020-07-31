@@ -1,4 +1,4 @@
 @extends('base')
 @section('content')
-    This is my first component
+    @include('components.menu.1')
 @endsection
