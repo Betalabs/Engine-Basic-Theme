@@ -1,4 +1,4 @@
-<li class="item product product-item model">
+<li class="item product product-item model hide">
     <div class="product">
         <a class="product-item-photo" href="#" title="Long sleeve overall">
             <span class="product-image-container">
@@ -9,7 +9,7 @@
         </a>
         <div class="product-item-details">
             <div class="product-item-name">
-                <a href="#">Long sleeve overall</a>
+                <a href="#"></a>
             </div>
             <div class="product-item-qty">
                 <label class="label">Qtd</label>

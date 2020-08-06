@@ -11,6 +11,7 @@
                     <ol class="minicart-items">
                         @include('components.menu.1.header-cart-minicart-wrapper-minicart-item')
                     </ol>
+                    <h3 class="empty-cart hide">Carrinho vazio</h3>
                 </div>
                 <div class="subtotal">
                     <span class="label">

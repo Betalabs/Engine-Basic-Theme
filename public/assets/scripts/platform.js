@@ -35,6 +35,12 @@
         var items = cart.items || [];
 
         items.forEach(item => fnBuildMiniCartItem(item));
+        if (items.length === 0) {
+            document
+                .querySelector('.minicart-items-wrapper .empty-cart')
+                .classList
+                .add('hide');
+        }
     }
     var fnBuildCartResume = function (data) {
         var $qty = document.querySelector('.header-link.header-cart');
