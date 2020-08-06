@@ -36,8 +36,16 @@
 
         items.forEach(item => fnBuildMiniCartItem(item));
     }
+    var fnBuildCartResume = function (data) {
+        var $qty = document.querySelector('.header-link.header-cart');
+        $qty.querySelector('a .badge').innerHTML=data.cart.count;
+
+        var $totalPrice = document.querySelector('.subtotal .price-container');
+        $totalPrice.querySelector('.price-wrapper .price').innerHTML='R$ '+data.cart.total;
+    }
 
     CanopusEventCenter.addListener('ServerDataLoader.Load', fnBuildLoggedHeader);
     CanopusEventCenter.addListener('ServerDataLoader.Load', fnBuildMiniCart);
+    CanopusEventCenter.addListener('ServerDataLoader.Load', fnBuildCartResume);
 
 })(window);

@@ -3,7 +3,7 @@
     <div class="block block-minicart">
         <div class="minicart-content-wrapper">
             <div class="block-title">
-                <span>Recently added item(s)</span>
+                <span>Itens do carrinho</span>
             </div>
             <a class="btn-minicart-close" title="Close">&#10060;</a>
             <div class="block-content">
