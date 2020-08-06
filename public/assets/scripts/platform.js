@@ -34,7 +34,7 @@
         var cart = data.cart || {};
         var items = cart.items || [];
 
-        items.forEach(item => fnBuildMiniCartItem);
+        items.forEach(item => fnBuildMiniCartItem(item));
     }
 
     CanopusEventCenter.addListener('ServerDataLoader.Load', fnBuildLoggedHeader);
