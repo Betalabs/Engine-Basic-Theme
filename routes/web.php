@@ -19,6 +19,6 @@ Route::get('/', function () {
 
 Route::get('/components/menu/1', function () {
     return view('mockings.menu.1')
-        ->with('categories', \EngineBasicTheme\Models\Category::query()->where('depth', 0)->get())
+        ->with('categories', \EngineLayoutBase\App\Models\Category::query()->where('depth', 0)->get())
         ->with('logo', 'https://assets.betalabs.net/fit-in/75x0/production/selflayout/images/stores/1/logo_transparent.png');
 });

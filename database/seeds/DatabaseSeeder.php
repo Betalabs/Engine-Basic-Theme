@@ -1,5 +1,6 @@
 <?php
 
+use EngineLayoutBase\Database\Seeds\DatabaseSeeder as EngineLayoutBaseDatabaseSeeder;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -11,6 +12,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(CategorySeeder::class);
+        $this->call(EngineLayoutBaseDatabaseSeeder::class);
     }
 }
