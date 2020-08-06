@@ -65,6 +65,9 @@
         <script src="{{ asset('assets/scripts/megamenu.min.js') }}"></script>
         <script src="{{ asset('assets/scripts/app.js') }}"></script>
 
+        <script src="https://io.betalabs.net/build/js/canopus/canopus-47676607bf.js"></script>
+        <script src="{{ asset('assets/scripts/platform.js') }}"></script>
+
     </body>
 
 </html>

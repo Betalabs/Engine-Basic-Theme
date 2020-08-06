@@ -17,18 +17,18 @@
                         <span>Subtotal</span>
                     </span>
                     <div class="amount price-container">
-                        <span class="price-wrapper"><span class="price">$0,00</span></span>
+                        <span class="price-wrapper"><span class="price">R$ 0,00</span></span>
                     </div>
                 </div>
                 <div class="actions">
                     <div class="secondary">
                         <a href="/checkout/cart" class="btn btn-alt">
-                            <i class="icon icon-cart"></i><span>View and edit cart</span>
+                            <i class="icon icon-cart"></i><span>Ver o carrinho</span>
                         </a>
                     </div>
                     <div class="primary">
                         <a class="btn" href="/checkout/payment">
-                            <i class="icon icon-external-link"></i><span>Go to Checkout</span>
+                            <i class="icon icon-external-link"></i><span>Ir para o pagamento</span>
                         </a>
                     </div>
                 </div>
