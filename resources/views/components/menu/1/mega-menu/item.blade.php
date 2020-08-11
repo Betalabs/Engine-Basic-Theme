@@ -1,6 +1,6 @@
 <li class="simple-dropdown">
     <a @if($zero->urls->isNotEmpty())
-       href="{{$zero->urls->first()->url}}"
+       href="/{{$zero->urls->first()->url}}"
        @endif
        title="{{$zero->name}}">
         {{$zero->name}}
@@ -11,7 +11,7 @@
                 @foreach($zero->children as $one)
                     <li>
                         <a @if($one->urls->isNotEmpty())
-                           href="{{$one->urls->first()->url}}"
+                           href="/{{$one->urls->first()->url}}"
                            @endif
                            title="{{$one->name}}">
                             {{$one->name}}
@@ -23,7 +23,7 @@
                                 @foreach($one->children as $two)
                                     <li>
                                         <a @if($two->urls->isNotEmpty())
-                                           href="{{$two->urls->first()->url}}"
+                                           href="/{{$two->urls->first()->url}}"
                                            @endif
                                            title="{{$two->name}}">
                                             {{$two->name}}
@@ -35,7 +35,7 @@
                                                 @foreach($two->children as $three)
                                                     <li>
                                                         <a @if($three->urls->isNotEmpty())
-                                                           href="{{$three->urls->first()->url}}"
+                                                           href="/{{$three->urls->first()->url}}"
                                                            @endif
                                                            title="{{$three->name}}">
                                                             {{$three->name}}

@@ -1,3 +1,7 @@
+@push('componentsScripts')
+    <script src="{{ asset('assets/scripts/components/menu-1.js') }}"></script>
+@endpush
+
 <!-- Header -->
 <header class="page-header variant-2 fullboxed sticky smart">
     <div class="navbar">
