@@ -1,5 +1,6 @@
 <?php
 
+use EngineLayoutBase\App\Facades\DataProviders;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,7 +13,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('base');
+Route::get('/components/menu/1', function () {
+    return view('scenarios.menu.1')
+        ->with('categories', DataProviders::categories())
+        ->with('logo', 'https://assets.betalabs.net/fit-in/75x0/production/selflayout/images/stores/1/logo_transparent.png');
 });

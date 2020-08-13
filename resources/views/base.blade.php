@@ -39,6 +39,8 @@
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 
+        @stack('componentsStyles')
+
     </head>
 
     <body class="boxed">
@@ -64,6 +66,9 @@
         <script src="{{ asset('assets/scripts/vendor/instafeed/instafeed.min.js') }}"></script>
         <script src="{{ asset('assets/scripts/megamenu.min.js') }}"></script>
         <script src="{{ asset('assets/scripts/app.js') }}"></script>
+
+        <script src="https://io.betalabs.net/build/js/canopus/canopus-47676607bf.js"></script>
+        @stack('componentsScripts')
 
     </body>
 
