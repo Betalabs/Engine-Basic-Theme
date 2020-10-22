@@ -18,3 +18,8 @@ Route::get('/components/menu/1', function () {
         ->with('categories', DataProviders::categories())
         ->with('logo', 'https://assets.betalabs.net/fit-in/75x0/production/selflayout/images/stores/1/logo_transparent.png');
 });
+Route::get('/components/menu/2', function () {
+    return view('scenarios.menu.2')
+        ->with('categories', DataProviders::categories())
+        ->with('logo', 'https://assets.betalabs.net/fit-in/75x0/production/selflayout/images/stores/1/logo_transparent.png');
+});

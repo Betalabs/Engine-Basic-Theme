@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
-        <title>Betalabs Basic Theme for Engine</title>
+        <title>{{ $title ??'Betalabs Basic Theme for Engine' }}</title>
 
         <!-- Vendor -->
         <link href="{{ asset('assets/styles/vendor/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
@@ -22,7 +22,7 @@
         <link href="{{ asset('assets/styles/megamenu.css') }}" rel="stylesheet">
 
         <!-- Color Schemes -->
-        <!-- your style-color.css here  -->
+        @include('components.color-definition')
         {{--<link href="{{ asset('assets/styles/colors/style-color-blue.css') }}" rel="stylesheet">--}}
         {{--<link href="{{ asset('assets/styles/colors/style-color-caribbean.css') }}" rel="stylesheet">--}}
         {{--<link href="{{ asset('assets/styles/colors/style-color-green.css') }}" rel="stylesheet">--}}
@@ -43,7 +43,8 @@
 
     </head>
 
-    <body class="boxed">
+{{--    <body class="boxed {{ isset($colors) ? 'color-custom' : '' }}">--}}
+    <body class="boxed color-custom">
 
         @yield('content')
 
