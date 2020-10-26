@@ -9,7 +9,7 @@
             <div class="block-content">
                 <div class="minicart-items-wrapper overflowed">
                     <ol class="minicart-items">
-                        @include('components.menu.1.header-cart-minicart-wrapper-minicart-item')
+                        @include('components.common.minicart-wrapper.minicart-item')
                     </ol>
                     <h3 class="empty-cart hide">Carrinho vazio</h3>
                 </div>

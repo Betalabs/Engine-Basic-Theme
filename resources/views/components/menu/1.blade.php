@@ -1,8 +1,8 @@
 @push('componentsScripts')
-    <script src="{{ asset('assets/scripts/components/menu-1.js') }}"></script>
+    <script src="{{ asset('assets/scripts/components/menu.js') }}"></script>
 @endpush
 @push('componentsStyles')
-    <link href="{{ asset('assets/styles/components/menu-1.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/styles/components/menu.css') }}" rel="stylesheet">
 @endpush
 
 <!-- Header -->
@@ -18,14 +18,14 @@
                     <i class="icon icon-cart"></i> <span class="badge">0</span>
                 </a>
                 <!-- minicart wrapper -->
-                @include('components.menu.1.header-cart-minicart-wrapper')
+                @include('components.common.minicart-wrapper')
                 <!-- /minicart wrapper -->
             </div>
             <!-- /Header Cart -->
             <!-- Header Links -->
             <div class="header-links">
                 <!-- Header Account -->
-                @include('components.menu.1.header-links-account')
+                @include('components.common.account')
                 <!-- /Header Account -->
             </div>
             <!-- /Header Links -->
@@ -54,11 +54,11 @@
 
             @desktop
             <!-- Mega Menu -->
-            @include('components.menu.1.mega-menu', ['categories' => $categories->collection])
+            @include('components.common.mega-menu', ['categories' => $categories->collection])
             <!-- /Mega Menu -->
             @elsedesktop
             <!-- Mobile Menu -->
-            @include('components.menu.1.mobile-menu', ['categories' => $categories->collection])
+            @include('components.common.mobile-menu', ['categories' => $categories->collection])
             <!-- Mobile Menu -->
             @enddesktop
         </div>
